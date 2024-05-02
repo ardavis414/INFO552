@@ -366,6 +366,12 @@ p {
   margin: 0;
 }
 
+.pageTitle {
+  color: var(--blue);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
 /* =============
     Buttons
 ============= */
@@ -395,6 +401,10 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: none;
+}
+
 /* =============
     Footer
 ============= */

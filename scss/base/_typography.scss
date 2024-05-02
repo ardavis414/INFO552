@@ -11,7 +11,7 @@ h1{
     font-optical-sizing: auto;
 }
 
-h1, h2, h3, h4, h5{
+h1,h2,h3,h4,h5{
     padding: 0;
     margin: 0;
 }
@@ -19,4 +19,10 @@ h1, h2, h3, h4, h5{
 p{
     padding: 0;
     margin: 0;
+}
+
+.pageTitle{
+    color: var(--blue);
+    font-size: rem-calc(40);
+    font-weight: 900;
 }
