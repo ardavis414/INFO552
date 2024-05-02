@@ -1,13 +1,8 @@
 /* =============
     Typography
 ============= */
-body {
+body{
     font-family: "Archivo", sans-serif;
-    font-optical-sizing: auto;
-}
-
-h1{
-    font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
 }
 
@@ -22,7 +17,21 @@ p{
 }
 
 .pageTitle{
-    color: var(--blue);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    color: var(--orangeBurnt);
     font-size: rem-calc(40);
     font-weight: 900;
+    margin-bottom: 32px;
+}
+
+.contentSectionTitle{
+    font-size: rem-calc(28);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.contentSectionSubtitle{
+    font-size: rem-calc(22);
+    font-weight: 800;
 }

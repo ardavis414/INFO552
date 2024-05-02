@@ -13,6 +13,13 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --aqua: #598392;
+  --blue: #124559;
+  --blueDark: #01161E;
+  --green: #AEC380;
+  --seaFoamGreen: #EFF6E0;
+  --orange: #FFA500;
+  --orangeBurnt: #cc5500;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -351,11 +358,6 @@ body {
   font-optical-sizing: auto;
 }
 
-h1 {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-}
-
 h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0;
@@ -367,9 +369,18 @@ p {
 }
 
 .pageTitle {
-  color: var(--blue);
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--orangeBurnt);
   font-size: 2.5rem;
   font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.contentSectionTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 
 /* =============
