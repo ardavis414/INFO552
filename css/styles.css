@@ -432,10 +432,6 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  display: none;
-}
-
 /* =============
     Footer
 ============= */
@@ -555,4 +551,17 @@ footer form button {
 
 #views-gallery li img {
   width: 100%;
+}
+
+/* =============
+    Contact
+============= */
+#contact-hero {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+#contact-form {
+  background-color: var(--seaFoamGreen);
+  padding: 32px 16px;
 }
