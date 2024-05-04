@@ -364,6 +364,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
+  color: var(--blueDark);
   padding: 0;
   margin: 0;
 }
@@ -438,6 +439,26 @@ header {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 32px;
+}
+footer h2 {
+  padding-top: 200px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+footer form input {
+  border-radius: 0;
+  border: none;
+}
+footer form button {
+  background-color: var(--blue);
+  padding: 16px;
+}
 #index-hero {
   margin: 32px 0;
   text-align: center;
@@ -459,8 +480,8 @@ header {
 
 #index-planning {
   padding: 32px 16px;
-  background-color: var(--blue);
-  color: var(--green);
+  background-color: var(--green);
+  color: var(--orangeBurnt);
   text-align: center;
 }
 #index-planning h1 {
@@ -505,4 +526,18 @@ header {
 }
 #index-planning #planning-callout img {
   margin: 26px 0;
+}
+
+#index-weather {
+  padding: 32px 16px;
+}
+#index-weather h1 {
+  color: var(--orangeBurnt);
+}
+#index-weather h2 {
+  color: var(--aqua);
+  margin-bottom: 8px;
+}
+#index-weather p {
+  margin-bottom: 24px;
 }
