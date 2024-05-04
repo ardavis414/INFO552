@@ -1,5 +1,88 @@
 // index //
 
 #index-hero{
-    background-color: orangered;
+    margin: 32px 0;
+    text-align: center;
+
+    >div{
+        padding: 0 16px;
+
+        p{
+            font-size: rem-calc(18);
+            color: var(--blue);
+            line-height: rem-calc(24);
+        }
+
+        button{
+            margin: 32px 0;
+        }
+    }
+
+    img{
+        width: 100%;
+        
+    }
+}
+
+#index-brands{
+
+}
+
+#index-planning{
+    padding: 32px 16px;
+    background-color: var(--blue);
+    color: var(--green);
+
+    text-align: center;
+
+    h1{
+        text-align: left;
+    }
+
+    p{
+        margin-bottom: 32px;
+        text-align: left;
+    }
+
+    #planning-hero{
+        width: 100%;
+    }
+
+    #planning-callout{
+        background-color: var(--green);
+        color: var(--blue);
+        text-align: center;
+        border-radius: 10px;
+        padding: 32px 0px;
+        width: 244px;
+
+        margin-top: -20px;
+
+        // for future lectures
+        display: inline-block;
+
+
+        #clock-container{
+            margin: 0px auto 26px;
+            height: 45px;
+            width: 45px;
+            background-color: var(--blue);
+            border-radius: 100%;
+
+            // for future lectures
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h3{
+            font-size: rem-calc(25);
+            font-weight: 500;
+        }
+
+        img{
+            margin: 26px 0;
+        }
+
+    }
 }

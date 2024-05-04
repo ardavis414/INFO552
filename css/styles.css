@@ -346,7 +346,7 @@ ul li {
   list-style: none;
 }
 
-img {
+.hide-img {
   display: none;
 }
 
@@ -383,9 +383,28 @@ p {
   margin-bottom: 16px;
 }
 
+.contentSectionSubtitle {
+  font-size: 1.375rem;
+  font-weight: 800;
+}
+
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.whiteButton {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 800;
+  padding: 16px 40px;
+  border-radius: 8px;
+}
+
 /* =============
     Forms
 ============= */
@@ -419,3 +438,71 @@ header {
 /* =============
     Footer
 ============= */
+#index-hero {
+  margin: 32px 0;
+  text-align: center;
+}
+#index-hero > div {
+  padding: 0 16px;
+}
+#index-hero > div p {
+  font-size: 1.125rem;
+  color: var(--blue);
+  line-height: 1.5rem;
+}
+#index-hero > div button {
+  margin: 32px 0;
+}
+#index-hero img {
+  width: 100%;
+}
+
+#index-planning {
+  padding: 32px 16px;
+  background-color: var(--blue);
+  color: var(--green);
+  text-align: center;
+}
+#index-planning h1 {
+  text-align: left;
+}
+#index-planning p {
+  margin-bottom: 32px;
+  text-align: left;
+}
+#index-planning #planning-hero {
+  width: 100%;
+}
+#index-planning #planning-callout {
+  background-color: var(--green);
+  color: var(--blue);
+  text-align: center;
+  border-radius: 10px;
+  padding: 32px 0px;
+  width: 244px;
+  margin-top: -20px;
+  display: inline-block;
+}
+#index-planning #planning-callout #clock-container {
+  margin: 0px auto 26px;
+  height: 45px;
+  width: 45px;
+  background-color: var(--blue);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#index-planning #planning-callout h3 {
+  font-size: 1.5625rem;
+  font-weight: 500;
+}
+#index-planning #planning-callout img {
+  margin: 26px 0;
+}
