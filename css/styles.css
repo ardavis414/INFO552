@@ -460,8 +460,25 @@ footer form input {
 }
 footer form button {
   background-color: var(--blue);
-  padding: 16px;
+  padding: 12px;
 }
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer ul li a {
+  color: var(--orangeBurnt);
+  font-size: 1.875rem;
+}
+
 #index-hero {
   margin: 32px 0;
   text-align: center;

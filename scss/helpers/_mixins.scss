@@ -104,7 +104,7 @@ html {
 
 
 /* ---------------- Media Queries ---------------- */
-// Small devices
+// Small devices - cell phones
 @mixin sm {
     @media (min-width: #{$screen-sm-min}) {
         @content;
@@ -116,7 +116,7 @@ html {
 // }
 
 
-// Medium devices
+// Medium devices - iPads on landscape mode
 @mixin md {
     @media (min-width: #{$screen-md-min}) {
         @content;
@@ -128,7 +128,7 @@ html {
 // }
 
 
-// Large devices
+// Large devices - laptops
 @mixin lg {
     @media (min-width: #{$screen-lg-min}) {
         @content;
@@ -140,7 +140,7 @@ html {
 // }
 
 
-// Extra large devices
+// Extra large devices - laptops with retina screen
 @mixin xl {
     @media (min-width: #{$screen-xl-min}) {
         @content;
@@ -151,7 +151,7 @@ html {
 //     grid-template-columns: repeat(4, 1fr);
 // }
 
-// Super Extra large devices
+// Super Extra large devices - big desktop monitors
 @mixin xxl {
     @media (min-width: #{$screen-xxl-min}) {
         @content;
