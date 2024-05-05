@@ -6,45 +6,55 @@ footer{
     background-color: var(--black);
     background-image: url("../img/footer/footer.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     color: var(--white);
-    text-align: center bottom;
-    padding-bottom: 32px;
+    text-align: center;
+    height: 60vh;
+    display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    
+// 6:01 minutes flex
+    div{
 
-    h2{
-        padding-top: 200px;
-        font-size: rem-calc(24);
-        font-weight: 600;
-        margin-bottom: 8px;
+        padding-bottom: 32px;
 
-    }
+        border: 1px solid red;
 
-    form{
-        input{
-            border-radius: 0;
-            border: none;
+        h2{
+            // padding-top: 200px;
+            font-size: rem-calc(24);
+            font-weight: 600;
+            margin-bottom: 8px;
         }
-
-        button{
-            background-color: var(--blue);
-            padding: 12px;
-        }
-    }
-
-    ul{
-        
-        display: flex;
-            flex-direction: row;
-        justify-content: space-evenly;
-
-        li{
-            a{
-                color: var(--orangeBurnt);
-                font-size: rem-calc(30);
-
+    
+        form{
+            input{
+                border-radius: 0;
+                border: none;
             }
+    
+            button{
+                background-color: var(--blue);
+                padding: 12px;
+            }
+        }
+    
+        ul{
 
+            display: flex;
+            justify-content: space-between;
+
+            li{
+                a{
+                    color: var(--orangeBurnt);
+                    font-size: rem-calc(30);
+                }
+    
+            }
         }
     }
+
+    
 
 }

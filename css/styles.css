@@ -432,10 +432,6 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  display: none;
-}
-
 /* =============
     Footer
 ============= */
@@ -443,38 +439,46 @@ footer {
   background-color: var(--black);
   background-image: url("../img/footer/footer.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   color: var(--white);
-  text-align: center bottom;
-  padding-bottom: 32px;
+  text-align: center;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-footer h2 {
-  padding-top: 200px;
+footer div {
+  padding-bottom: 32px;
+  border: 1px solid red;
+}
+footer div h2 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-footer form input {
+footer div form input {
   border-radius: 0;
   border: none;
 }
-footer form button {
+footer div form button {
   background-color: var(--blue);
   padding: 12px;
 }
-footer ul {
+footer div ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-footer ul li a {
+footer div ul li a {
   color: var(--orangeBurnt);
   font-size: 1.875rem;
 }
