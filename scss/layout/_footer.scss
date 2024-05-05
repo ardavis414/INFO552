@@ -4,8 +4,11 @@
 
 footer{
     background-color: var(--black);
+    background-image: url("../img/footer/footer.jpg");
+    background-size: cover;
+    background-position: center;
     color: var(--white);
-    text-align: center;
+    text-align: center bottom;
     padding-bottom: 32px;
 
     h2{
