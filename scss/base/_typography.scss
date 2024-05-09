@@ -24,12 +24,20 @@ p{
     font-size: rem-calc(40);
     font-weight: 900;
     margin-bottom: 32px;
+
+    @include md{
+        font-size: rem-calc(60);
+    }
 }
 
 .contentSectionTitle{
     font-size: rem-calc(28);
     font-weight: 600;
     margin-bottom: 16px;
+
+    @include md{
+        font-size: rem-calc(32);
+    }
 }
 
 .contentSectionSubtitle{
