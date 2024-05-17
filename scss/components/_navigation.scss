@@ -1,3 +1,50 @@
 /* =============
     Navigation
 ============= */
+
+a{
+    text-decoration: none;
+}
+
+#main-nav{
+    background-color: var(--green);
+    padding: 16px;
+
+    @include md{
+        background-color: var(--white);
+        padding: 0px 16px 0px 0px;
+    }
+
+    ul{
+        @include md{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        li{
+            text-align: right;
+
+            a:link, a:visited{
+                display: inline-block;
+                padding: 16px 0;
+                color: var(--white);
+                transition: 0.25s;
+
+                @include md{
+                    color: var(--blue);
+                }
+
+                i{
+                    color: var(--orangeBurnt);
+                    margin-right: 8px;
+                }
+            }
+
+            a:hover, a:active{
+                color: var(--orangeBurnt);
+            }
+        }
+    }
+}

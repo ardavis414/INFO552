@@ -3,7 +3,6 @@
 ============= */
 
 ul{
-    padding: 0;
     margin: 0;
 
     li{
@@ -13,6 +12,10 @@ ul{
 
 .hide-img{
     display: none;
+}
+
+.header-padding{
+    padding-top: 95px;
 }
 
 .xxl-grid{
