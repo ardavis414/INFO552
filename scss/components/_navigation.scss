@@ -6,10 +6,17 @@ a{
     text-decoration: none;
 }
 
+.hide-menu{
+    display: none;
+
+    @include md{
+        display: block;
+    }
+}
+
 #main-nav{
     background-color: var(--green);
     padding: 16px;
-    display: none;
 
     @include md{
         background-color: var(--white);
