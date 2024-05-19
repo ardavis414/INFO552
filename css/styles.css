@@ -499,11 +499,13 @@ a {
 #main-nav {
   background-color: var(--green);
   padding: 16px;
+  display: none;
 }
 @media (min-width: 768px) {
   #main-nav {
     background-color: var(--white);
     padding: 0px 16px 0px 0px;
+    display: block;
   }
 }
 @media (min-width: 768px) {
