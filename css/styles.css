@@ -13,6 +13,12 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --greenDark: #669933;
+  --whiteDutch: #efe2ba;
+  --yellowGoldenrod: #d79922;
+  --blueDark: #4056a1;
+  --blueLight: #c5cbe3;
+  --redVermillion: #f13c20;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,12 +337,71 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.hide-img {
+  display: none;
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 0 16px;
+  margin: 0;
+}
+
+p {
+  color: var(--blueDark);
+  padding: 0 16px;
+  margin: 0;
+}
+
+.pageTitle {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--redVermillion);
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.contentSectionTitle {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.whiteButton {
+  background-color: var(--blueLight);
+  color: var(--black);
+  font-size: 1.125rem;
+  font-weight: 800;
+  padding: 16px 40px;
+  border-radius: 8px;
+}
+
 /* =============
     Forms
 ============= */
@@ -366,3 +431,28 @@ textarea {
 /* =============
     Footer
 ============= */
+#index-hero {
+  margin: 32px 0;
+  text-align: left;
+}
+#index-hero > div {
+  padding: 0 16px;
+}
+#index-hero > div p {
+  font-size: 1.125rem;
+  color: var(--whiteDutch);
+  line-height: 1.5rem;
+}
+#index-hero > div button {
+  margin: 32px 0;
+}
+#index-hero img {
+  width: 100%;
+}
+
+#index-contact {
+  padding: 32px 16px;
+  background-color: var(--whiteDutch);
+  color: var(--redVermillion);
+  text-align: center;
+}

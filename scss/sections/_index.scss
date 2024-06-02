@@ -1,0 +1,36 @@
+// index //
+
+#index-hero{
+    margin: 32px 0;
+    text-align: left;
+
+    >div{
+        padding: 0 16px;
+
+        p{
+            font-size: rem-calc(18);
+            color: var(--whiteDutch);
+            line-height: rem-calc(24);
+        }
+
+        button{
+            margin: 32px 0;
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+#index-service{
+
+}
+
+#index-contact{
+    padding: 32px 16px;
+    background-color: var(--whiteDutch);
+    color: var(--redVermillion);
+
+    text-align: center;
+}

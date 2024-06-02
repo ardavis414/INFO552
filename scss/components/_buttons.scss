@@ -1,3 +1,17 @@
 /* =============
     Buttons
 ============= */
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+.whiteButton{
+    background-color: var(--blueLight);
+    color: var(--black);
+    font-size: rem-calc(18);
+    font-weight: 800;
+    padding: 16px 40px;
+    border-radius: 8px;
+}

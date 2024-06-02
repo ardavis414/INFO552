@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!--Style Sheet-->
     <link rel="stylesheet" href="css/styles.css">
+
     <title>Final Portfolio</title>
 </head>
 
@@ -15,35 +23,49 @@
         
         <nav>
             <ul>
+                
                 <li>
-                    <a href="about.html"></a><img src="#" alt="about logo">
+                    <a href="resume.html"><img src="#" alt="resume logo">Resume</a>
                 </li>
                 <li>
-                    <a href="resume.html"></a><img src="#" alt="resume logo">
+                    <a href="projects.html"><img src="#" alt="projects logo">Projects</a>
                 </li>
                 <li>
-                    <a href="projects.html"></a><img src="#" alt="projects logo">
+                    <a href="#"><img src="#" alt="associations logo">Service</a>
                 </li>
                 <li>
-                    <a href="associations.html"></a><img src="#" alt="associations logo">
+                    <a href="#"><img src="#" alt="contact logo">Contact Me</a>
                 </li>
                 <li>
-                    <a href="contact.html"></a><img src="#" alt="contact logo">
-                </li>
-                <li>
-                    <a href="sitemap.html"></a><img src="#" alt="sitemap logo">
+                    <a href="sitemap.html"><img src="#" alt="sitemap logo">Sitemap</a>
                 </li>
             </ul>
         </nav>
     </header>
     
-    <section>
-        <h2>About Me</h2>
-        <p>I’m a mid-career changer who is transitioning into technical services librarianship. I’m currently enrolled in Drexel University’s MLIS program and will be graduating in June 2024. While completing my degree part-time, I’ve interned with Penn Libraries; the International Center for MultiGenerational Legacies of Trauma (ICMGLT); and the Kislak Center for Special Collections, Rare Books and Manuscripts.</p>
+    <section id="index-hero">
+        <div>
+            <h2 class="pageTitle">About Me</h2>
+            <p>I’m a mid-career changer who is transitioning into technical services librarianship. I’m currently enrolled in Drexel University’s MLIS program and will be graduating in June 2024. While completing my degree part-time, I’ve interned with Penn Libraries; the International Center for MultiGenerational Legacies of Trauma (ICMGLT); and the Kislak Center for Special Collections, Rare Books and Manuscripts.</p>
 
-        <p>Thanks to my graduate courses and internship placements, I quickly discovered that working with data and metadata brings me as much joy as teaching social studies or engaging in visual arts. Though I initially felt overwhelmed when I enrolled in “techie” courses like <em>Foundations of Data and Information</em> or <em>Python Programming Foundations</em>, I ended the term with a level of confidence that I had never experienced before. Today, I’m utilizing my resource description knowledge to catalog hundreds of books for the Penn Libraries Community Engagement team. I’m also training with a senior information processing librarian to complete technical services projects, such as the retrospective conversion of bibliographic records and engagement with linked data through BIBFRAME and Sinopia.</p>
+            <p>Thanks to my graduate courses and internship placements, I quickly discovered that working with data and metadata brings me as much joy as teaching social studies or engaging in visual arts. Though I initially felt overwhelmed when I enrolled in “techie” courses like <em>Foundations of Data and Information</em> or <em>Python Programming Foundations</em>, I ended the term with a level of confidence that I had never experienced before. Today, I’m utilizing my resource description knowledge to catalog hundreds of books for the Penn Libraries Community Engagement team. I’m also training with a senior information processing librarian to complete technical services projects, such as the retrospective conversion of bibliographic records and engagement with linked data through BIBFRAME and Sinopia.</p>
             
-       <p>A native of Philadelphia and a product of the local public school system, I’m invested in advocating for the best educational opportunities for all Philadelphians. In addition to my professional interests, I’m an avid solo traveler, a visual arts hobbyist, and the emotional support person to two, very energetic, senior cats. I previously earned a BA in International Relations from Boston University and a MS in Educational Studies from Johns Hopkins University.</p>
+            <p>A native of Philadelphia and a product of the local public school system, I’m invested in advocating for the best educational opportunities for all Philadelphians. In addition to my professional interests, I’m an avid solo traveler, a visual arts hobbyist, and the emotional support person to two, very energetic, senior cats. I previously earned a BA in International Relations from Boston University and a MS in Educational Studies from Johns Hopkins University.</p>
+        </div>
+    </section>
+
+    <section id="index-service">
+
+    </section>
+
+    <section id="index-contact">
+        <h1 class="contentSectionTitle">Contact Me</h1>
+        <form action="#">
+            <input type="text" placeholder="First and last name, please.">
+            <input type="email" placeholder="Professional and work emails are preferred.">
+            <textarea placeholder="Do you have some sage advice that you'd like to share with me? Am I a strong candidate for an open position at your institution? Let me know here."></textarea>
+            <button>SUBMIT</button>
+        </form>
     </section>
 
     <footer>

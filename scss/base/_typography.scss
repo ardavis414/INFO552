@@ -1,3 +1,35 @@
 /* =============
     Typography
 ============= */
+body{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+}
+
+h1,h2,h3,h4,h5{
+    padding: 0 16px;
+    margin: 0;
+}
+
+p{
+    color: var(--blueDark);
+    padding: 0 16px;
+    margin: 0;
+}
+
+.pageTitle{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    color: var(--redVermillion) ;
+    font-size: rem-calc(40);
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 32px;
+}
+
+.contentSectionTitle{
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: rem-calc(28);
+    font-weight: 600;
+    margin-bottom: 16px; 
+}
