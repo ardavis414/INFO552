@@ -380,9 +380,15 @@ p {
 
 .contentSectionTitle {
   font-family: "Archivo Narrow", sans-serif;
+  color: var(--greenDark);
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 16px;
+}
+
+.contentSectionSubtitle {
+  font-size: 1.375rem;
+  font-weight: 800;
 }
 
 /* =============
@@ -434,6 +440,7 @@ textarea {
 #index-hero {
   margin: 32px 0;
   text-align: left;
+  background-color: var(--blueDark);
 }
 #index-hero > div {
   padding: 0 16px;

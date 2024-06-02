@@ -29,7 +29,13 @@ p{
 
 .contentSectionTitle{
     font-family: "Archivo Narrow", sans-serif;
+    color: var(--greenDark);
     font-size: rem-calc(28);
     font-weight: 600;
     margin-bottom: 16px; 
+}
+
+.contentSectionSubtitle{
+    font-size: rem-calc(22);
+    font-weight: 800;
 }
