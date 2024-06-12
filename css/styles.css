@@ -359,12 +359,12 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  padding: 0 16px;
+  padding: 0;
   margin: 0;
 }
 
 p {
-  color: var(--orangeTerracotta);
+  color: var(--blueDark);
   padding: 0 16px;
   margin: 0;
 }
@@ -376,7 +376,7 @@ p {
   font-size: 2.5rem;
   font-weight: 700;
   font-style: italic;
-  margin-bottom: 32px;
+  padding-top: 16px;
 }
 
 .contentSectionTitle {
@@ -388,7 +388,8 @@ p {
 }
 
 .contentSectionSubtitle {
-  color: var(--greenDark);
+  font-family: "Archivo Narrow", sans-serif;
+  color: var(--blueDark);
   font-size: 1.375rem;
   font-weight: 800;
 }
@@ -451,7 +452,7 @@ header #logo-container {
     Footer
 ============= */
 #index-hero {
-  padding: 32px 0;
+  padding: 16px 0;
   text-align: left;
   background-color: var(--whiteDutch);
 }
@@ -469,7 +470,7 @@ header #logo-container {
   background-color: var(--whiteDutch);
 }
 #index-service > div {
-  padding: 0 16px;
+  padding: 0 16px 16px;
 }
 #index-service > div ul {
   padding: 0 30px;
@@ -477,24 +478,13 @@ header #logo-container {
 
 #index-contact {
   padding: 32px 16px;
-  background-color: var(--whiteDutch);
+  background-color: var(--blueDark);
   text-align: center;
 }
 
-#projects-hero {
-  padding: 32px 0;
-  text-align: left;
+#projects-list {
+  background-color: var(--whiteDutch);
 }
-#projects-hero > div {
-  padding: 0 16px;
-}
-#projects-hero > div ul {
-  font-size: 1.125rem;
-  color: var(--blueDark);
-  line-height: 1.5rem;
-  padding-bottom: 20px;
-}
-
 #projects-list > div {
   padding: 0 16px;
 }
@@ -505,9 +495,45 @@ header #logo-container {
 #projects-reference {
   text-align: left;
   padding: 32px 16px;
+  background-color: var(--whiteDutch);
+}
+#projects-reference > div {
+  padding: 16px 30px;
 }
 
 #projects-MODS {
   text-align: left;
   padding: 32px 16px;
+  background-color: var(--whiteDutch);
+}
+#projects-MODS > div {
+  padding: 16px 30px;
+}
+
+#resume-hero {
+  padding: 20px 16px;
+  text-align: left;
+  background-color: var(--whiteDutch);
+}
+
+#resume-pdf {
+  text-align: left;
+  padding: 5px 16px;
+  background-color: var(--whiteDutch);
+}
+#resume-pdf > div {
+  padding: 16px 30px 20px;
+}
+
+#sitemap-hero {
+  text-align: center;
+  background-color: var(--whiteDutch);
+}
+
+#sitemap-container {
+  text-align: left;
+  background-color: var(--whiteDutch);
+}
+#sitemap-container > div {
+  padding: none;
 }

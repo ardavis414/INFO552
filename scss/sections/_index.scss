@@ -1,7 +1,7 @@
 // index //
 
 #index-hero{
-    padding: 32px 0;
+    padding: 16px 0;
     text-align: left;
     background-color: var(--whiteDutch);
 
@@ -22,7 +22,7 @@
     background-color: var(--whiteDutch);
 
     >div{
-        padding: 0 16px;
+        padding: 0 16px 16px;
 
         ul{
             padding: 0 30px;
@@ -32,7 +32,7 @@
 
 #index-contact{
     padding: 32px 16px;
-    background-color: var(--whiteDutch);
+    background-color: var(--blueDark);
 
     text-align: center;
 
