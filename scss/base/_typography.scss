@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5{
 }
 
 p{
-    color: var(--blueDark);
+    color: var(--orangeTerracotta);
     padding: 0 16px;
     margin: 0;
 }
@@ -20,22 +20,23 @@ p{
 .pageTitle{
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
-    color: var(--redVermillion) ;
+    color: var(--orangeTerracotta);
     font-size: rem-calc(40);
-    font-weight: 600;
+    font-weight: 700;
     font-style: italic;
     margin-bottom: 32px;
 }
 
 .contentSectionTitle{
     font-family: "Archivo Narrow", sans-serif;
-    color: var(--greenDark);
+    color: var(--orangeTerracotta);
     font-size: rem-calc(28);
     font-weight: 600;
     margin-bottom: 16px; 
 }
 
 .contentSectionSubtitle{
+    color: var(--greenDark);
     font-size: rem-calc(22);
     font-weight: 800;
 }

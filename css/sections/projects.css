@@ -1,0 +1,30 @@
+#projects-hero {
+  padding: 32px 0;
+  text-align: left;
+  background-color: var(--whiteDutch);
+}
+#projects-hero > div {
+  padding: 0 16px;
+}
+#projects-hero > div p {
+  font-size: rem-calc(18);
+  color: var(--blueDark);
+  line-height: rem-calc(24);
+  padding-bottom: 20px;
+}
+
+#resume-service {
+  background-color: var(--whiteDutch);
+}
+#resume-service > div {
+  padding: 0 16px;
+}
+#resume-service > div ul {
+  padding: 0 30px;
+}
+
+#index-contact {
+  padding: 32px 16px;
+  background-color: var(--whiteDutch);
+  text-align: center;
+}

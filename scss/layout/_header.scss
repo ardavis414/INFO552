@@ -2,5 +2,14 @@
     Header
 ============= */
 header{
-    // display: none;
+    // position: fixed;
+    background-color: var(--whiteDutch);
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    #logo-container{
+        padding: 16px 0 16px 16px;
+    }
 }
