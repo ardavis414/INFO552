@@ -389,7 +389,7 @@ p {
 
 .contentSectionSubtitle {
   font-family: "Archivo Narrow", sans-serif;
-  color: var(--blueDark);
+  color: var(--greenDark);
   font-size: 1.375rem;
   font-weight: 800;
 }
@@ -451,6 +451,10 @@ header #logo-container {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--blueLight);
+}
+
 #index-hero {
   padding: 16px 0;
   text-align: left;
@@ -536,4 +540,30 @@ header #logo-container {
 }
 #sitemap-container > div {
   padding: none;
+}
+
+#pl-hero {
+  padding: 16px 0;
+  text-align: left;
+  background-color: var(--whiteDutch);
+}
+
+#pl-PLCE {
+  background-color: var(--whiteDutch);
+}
+#pl-PLCE > div {
+  padding: 0 16px;
+}
+#pl-PLCE > div p {
+  padding: 0 30px;
+}
+
+#pl-IPC {
+  background-color: var(--whiteDutch);
+}
+#pl-IPC > div {
+  padding: 0 16px;
+}
+#pl-IPC > div p {
+  padding: 0 30px;
 }
