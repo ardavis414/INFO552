@@ -1,5 +1,5 @@
-// Penn Libraries projects //
-#pl-hero{
+// MLIS capstone projects //
+#cp-hero{
     padding: 16px 0;
     text-align: left;
     background-color: var(--whiteDutchLite);
@@ -20,7 +20,7 @@
 }
 
 
-#pl-PLCE{
+#cp-ICMGLT{
     background-color: var(--whiteDutchLite);
 
     >div{
@@ -32,8 +32,22 @@
     }   
 }
 
+#cp-List{
+    background-color: var(--whiteDutchLite);
 
-#pl-IPC{
+    ul{
+        padding: 0 22px 5px;
+        li{
+            color: var(--blueDark);  
+        }
+             
+                
+    }
+}
+
+
+
+#cp-Kislak{
     background-color: var(--whiteDutchLite);
 
     >div{

@@ -3,4 +3,32 @@
 ============= */
 footer{
     background-color: var(--blueLight);
+    text-align: center;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @include lg{
+        background-position: center;
+        height: 70vh;
+    }
+
+    >div{
+        padding-bottom: 32px;
+    
+        ul{
+            padding: 32px 6vw 16px;
+            display: inline-flex;
+            justify-content: space-between;
+
+            li{
+                a{
+                    color: var(--orangeBurnt);
+                    font-size: rem-calc(30);
+                }
+    
+            }
+        }
+    }
 }

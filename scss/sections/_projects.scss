@@ -1,42 +1,40 @@
 // projects //
 
-// #projects-hero{
-//     padding: 32px 0;
-//     text-align: left;
-//     background-color: var(--whiteDutch);
+#projects-hero{
+    padding: 32px 0;
+    text-align: left;
+    background-color: var(--whiteDutchLite);
     
-
-//     >div{
-//         // padding: 0 16px;
-
-//         p{
-//             font-size: rem-calc(18);
-//             color: var(--blueDark);
-//             line-height: rem-calc(24);
-//             padding-bottom: 20px;
-//         }
-
-        
-//     }
-// }
+}
 
 
 #projects-list{
-    background-color: var(--whiteDutch);
+    background-color: var(--whiteDutchLite);
 
     >div{
         padding: 0 16px;
 
         ul{
             padding: 0 30px;
+            
+            li{
+                list-style-type: square;
+                // ::marker{
+                //     color: var(#37115a);
+                ul{
+                    li{
+                        list-style-type: square;  
+                    }
+                }
+                }   
+            }
         }
-    }   
-}
+    }
 
 #projects-reference{
     text-align: left;
     padding: 32px 16px;
-    background-color: var(--whiteDutch);
+    background-color: var(--whiteDutchLite);
 
     >div{
         padding: 16px 30px;
@@ -46,7 +44,7 @@
 #projects-MODS{
     text-align: left;
     padding: 32px 16px;
-    background-color: var(--whiteDutch);
+    background-color: var(--whiteDutchLite);
 
     >div{
         padding: 16px 30px;

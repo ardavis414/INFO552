@@ -1,3 +1,28 @@
 /* =============
     Navigation
 ============= */
+
+#main-nav{
+    background-color: var(--yellowGoldenrod);
+    padding: 5px;
+}
+
+ul{
+    li{
+        text-align: left;
+
+        a:link, a:visited{
+            display: inline;
+            padding: 16px 0;
+            color: var(--blueDark);
+            transition: 0.25s;
+        }
+            i{
+                color: var(--white);
+                margin-left: 8px;
+            }
+        a:hover, a:active{
+            color: var(--white);
+        }
+    }
+}

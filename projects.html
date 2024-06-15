@@ -17,13 +17,14 @@
     </head>
 
 <body>
-    <header>
-        <!-- <a href="index.html"><img src="img/header/AlishaHeadshot.jpg" alt="Alisha headshot"></a> -->
-        <h1>
-            <a href="index.html">Alisha R. Davis - Early Career Librarian</a>
-        </h1>
+    <header class="xl-grid">
+        <div id="header-container" class="xl-grid-item">
+            <div id="logo-container">
+                <a href="index.html"><img src="img/header/AlishaHeadshot.jpg" alt="Alisha headshot"></a>
+            </div>
+
         
-        <nav>
+        <nav id="main-nav">
             <ul>
                 
                 <li>
@@ -38,37 +39,38 @@
                 <li>
                     <a href="index.html#index-contact"><img src="img/header/icons/contact.svg" alt="contact logo">Contact Me</a>
                 </li>
-                <li>
-                    <a href="sitemap.html"><img src="img/header/icons/map.svg" alt="sitemap logo">Sitemap</a>
-                </li>
             </ul>
         </nav>
+        </div>
     </header>
+
+    <section id="projects-hero">
+        <h1 class="pageTitle">Projects</h1>
+    </section>
 
     <section id="projects-list">
         <div>
-        <h2 class="pageTitle">Projects</h2>
-        <h5 class="contentSectionSubtitle">I've completed the following projects as a MLIS student and intern:</h5>
+        <h2 class="contentSectionTitle">I've completed the following projects as a MLIS student and intern:</h2>
             <ul>
-                <li><a href="projects.html#projects-reference">LibGuide: Descriptive Cataloging </a></li>
-                <li><a href="projects.html#projects-MODS">MODS Usage in Digital Repositories</a></li>
-                <li><a href="penn_libraries.html">University of Pennsylvania Libraries Internship</a></li>
+                <li class="li_a"><a href="projects.html#projects-reference">LibGuide: Descriptive Cataloging </a></li>
+                <li class="li_a"><a href="projects.html#projects-MODS">MODS Usage in Digital Repositories</a></li>
+                <li class="li_a"><a href="penn_libraries.html">University of Pennsylvania Libraries Internship</a></li>
                     <ul>
-                        <li><a href="penn_libraries.html#pl-PLCE">Commmunity Engagement (PLCE)</a></li>
-                        <li><a href="penn_libraries.html#pl-IPC">Information Processing Center (IPC)</a></li>
+                        <li class="li_b"><a href="penn_libraries.html#pl-PLCE">Commmunity Engagement (PLCE)</a></li>
+                        <li class="li_b"><a href="penn_libraries.html#pl-IPC">Information Processing Center (IPC)</a></li>
                     </ul>
                 <!-- add in page and content for capstone projects -->
-                <li><a href="capstone_project.html">MLIS Capstone</a></li>
+                <li class="li_a"><a href="capstone_project.html">MLIS Capstone</a></li>
                     <ul>
-                        <li><a href="#">International Center for MultiGenerational Legacies of Trauma (ICMGLT)</a></li>
-                        <li><a href="#">Kislak Center for Special Collections, Rare Books and Manuscripts</a></li>
+                        <li class="li_b"><a href="#">International Center for MultiGenerational Legacies of Trauma (ICMGLT)</a></li>
+                        <li class="li_b"><a href="#">Kislak Center for Special Collections, Rare Books and Manuscripts</a></li>
                     </ul>
             </ul>
         </div>
     </section>
 
     <section id="projects-reference">
-        <h3 class="contentSectionTitle">Reference: Descriptive Cataloging 101 Libguide</h3>
+        <h3 class="contentSectionSubtitle">Reference: Descriptive Cataloging 101 Libguide</h3>
         <p>The following LibGuide was researched and created as a term final for a users, services, and resources course. The purpose of this LibGuide is to support the training of novice catalogers who currently volunteer in Philadelphia's public school libraries. Without professional librarians on staff in elementary schools, they rely on retired volunteers to keep their libraries running.
         </p>
 
@@ -79,7 +81,7 @@
     </section>
     
     <section id="projects-MODS">
-        <h3 class="contentSectionTitle">Metadata and Resource Description: MODS Repositories Analysis and Assessment</h3>
+        <h3 class="contentSectionSubtitle">Metadata and Resource Description: MODS Repositories Analysis and Assessment</h3>
         <p>
             Abstract: Despite the development and widespread adoption of metadata schemas and standards, evidence suggests that libraries, archives, and museums still experience issues with search-ability and interoperability within their metadata records. This report reviews 60 total MODS-XML records from three institutions: Columbia University Libraries, JISC, and Brown University Library to evaluate each collection's average rates of accuracy and completion in accordance to the MODS implementation guidelines and Library of Congress Authorities schemas. The selected data was used as evidence to support the hypothesis that inconsistent and/or inaccurate implementation of MODS elements in database records causes decreased interoperability amongst the three repositories. Additionally, inaccurate mapping between display terms and MODS elements hinders users' chances of completing successful targeted and exploratory database inquiries.  
         </p>
@@ -95,8 +97,25 @@
             <ul>
                 <li><a href="https://github.com/ardavis414/INFO552.git"><img src="img/footer/icons/git.svg" alt="github icon"></a></li>
                 <li><a href="https://www.linkedin.com/in/alisha-r-davis/"><img src="img/footer/icons/link.svg" alt="linkedin icon"></a></li>
-                <li><a href="http://ardavislibrarianship.com/musings/"><img src="img/footer/icons/blog icon.svg" alt="professional blog icon"></a></li>
+                <li><a href="http://ardavislibrarianship.com/musings/"><img src="img/footer/icons/blog_icon.svg" alt="professional blog icon">Wordpress</a></li>
             </ul>
+        <section>
+            <ul>
+                <li>
+                    <a href="sitemap.html"><img src="img/header/icons/map.svg" alt="sitemap logo">Sitemap</a>
+                </li>
+                <li>
+                    <a href="https://drexel.edu/cci/">Drexel University, College of Computing and Informatics (CCI)</a>
+                </li>
+                <li>
+                    <a href="#">XHTML validation</a>
+                </li>
+                <li>
+                    <a href="#">CSS validation</a>
+                </li> 
+            </ul>
+            <p>© Alisha Davis</p>
+        </section>
     </footer>
 </body>
 

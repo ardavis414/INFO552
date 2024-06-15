@@ -17,13 +17,14 @@
 </head>
 
 <body>
-    <header>
-        <!-- <a href="index.html"><img src="img/header/AlishaHeadshot.jpg" alt="Alisha headshot"></a> -->
-        <h1>
-            <a href="index.html">Alisha R. Davis - Early Career Librarian</a>
-        </h1>
+    <header class="xl-grid">
+        <div id="header-container" class="xl-grid-item">
+            <div id="logo-container">
+                <a href="index.html"><img src="img/header/AlishaHeadshot.jpg" alt="Alisha headshot"></a>
+            </div>
+
         
-        <nav>
+        <nav id="main-nav">
             <ul>
                 
                 <li>
@@ -33,34 +34,67 @@
                     <a href="projects.html"><img src="img/header/icons/projects.svg" alt="projects logo">Projects</a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/header/icons/volunteer.svg" alt="associations logo">Service</a>
+                    <a href="index.html#index-service"><img src="img/header/icons/volunteer.svg" alt="associations logo">Professional Associations</a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/header/icons/contact.svg" alt="contact logo">Contact Me</a>
-                </li>
-                <li>
-                    <a href="sitemap.html"><img src="img/header/icons/map.svg" alt="sitemap logo">Sitemap</a>
+                    <a href="index.html#index-contact"><img src="img/header/icons/contact.svg" alt="contact logo">Contact Me</a>
                 </li>
             </ul>
         </nav>
+        </div>
     </header>
 
-    <section>
-        <h2>International Center for MultiGenerational Legacies of Trauma</h2>
-            <h3>Data Wrangling and Cataloging Intern</h3>
-            <p>In compliance with the Master's in Library and Information Science degree requirements at Drexel, I am currently working in collaboration with the International Center for MultiGenerational Legacies of Trauma (ICMGLT) as an intern for course credit. The ICMGLT is a non-profit organization that is dedicated to:</p>
-                <ul>
-                    <li>raising awareness of ongoing suffering by identity groups that have been exposed to multigenerational legacies of trauma.</li>
-                    <li>preventing future generations of people from inheriting the same trauma from their parents and grandparents.</li>
-                    <li>advocating for societal awareness of the harms of generational trauma and providing educational resources to combat it.</li>
-                </ul>
-            <p>As a data wrangling and metadata intern, I am supporting ICMGLT's vision for migrating its library records from its current database host, Wordpress, to another repository that specializes in long-term data preservation and stewardship. My role as an intern is to use OpenRefine to clean up and refine hundreds of the ICMGLT library's records in preparation for the future migration. See my capstone proposal in the embedded document below.</p>
+    <section id="cp-hero">
+        <h1 class="pageTitle">MLIS Capstone Projects</h1>
+    </section>
+
+    <section id="cp-ICMGLT">
+        <h2 class="contentSectionTitle">International Center for MultiGenerational Legacies of Trauma</h2>
+        <h3 class="contentSectionSubtitle">Data Wrangling and Cataloging Intern</h3>
+        <p>In compliance with the Master's in Library and Information Science degree requirements at Drexel, I completed a project in collaboration with the <a href="https://icmglt.org/">International Center for MultiGenerational Legacies of Trauma (ICMGLT)</a> as an intern for course credit. The ICMGLT is a non-profit organization that is dedicated to:</p>
+        <div id="cp-List">
+            <ul>
+                <li class="li_a">raising awareness of ongoing suffering by identity groups that have been exposed to multigenerational legacies of trauma.</li>
+                <li class="li_a">preventing future generations of people from inheriting the same trauma from their parents and grandparents.</li>
+                <li class="li_a">advocating for societal awareness of the harms of generational trauma and providing educational resources to combat it.</li>
+            </ul>
+        </div>
+
+        <p>As a data wrangling and metadata intern, I supported ICMGLT's vision for migrating its library records from its current database host, Wordpress, to another repository that specializes in long-term data preservation and stewardship. My role as an intern was to use OpenRefine to clean up and organize hundreds of the ICMGLT library's records in preparation for the future migration. See my work in the embedded documents below.</p>
             <!-- insert proposal form, dmp, and local terms guide -->
     </section>
 
-    <section>
-        <h2>Kislak Center for Special Collections, Rare Books and Manuscripts</h2>
-        <p></p>
+    <section id="cp-Kislak">
+        <h2 class="contentSectionTitle">Kislak Center for Special Collections, Rare Books and Manuscripts</h2>
+        <p>
+            The <a href="https://www.library.upenn.edu/kislak">Kislak Center</a> is the University of Pennsylvania's main location for public access to rare books, manuscripts, and archives.
+            The Center's goals are to process its collections for public accessibility; use the collectons to enhance learning and research; and to preserve cultural heritage material for the forseeable future. Below you can access the finding aids for the collections that I processed.
+        </p>
+        <h3 class="contentSectionSubtitle"><a href="https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.COLL.1583">Wistar, Pennock, Lukens, Miller, Davis family papers</a></h3>
+        <p>
+            <i>Extent:</i>
+            linear feet (4 boxes)<span class="break-point">Abstract: 
+            
+            The Wistar Family papers measure 1.5 linear feet, date from 1686-1967, and are comprised of correspondence; family and estate documents; genealogical research; and other family material. The collection documents the personal and family lives of Dr. Caspar Wistar II (1740-1811), Mary "Polly" Franklin Wistar (1735-1804), Mary Pearsall Franklin (1703-1786), Sarah Wistar Pennock (1770-1845), Caspar Wistar Pennock (1799-1867), Sarah "Sallie" Wistar Pennock Miller (1840-1909), Virginia Preston Weaver Miller (1868-1951) and Virginia Weaver Miller. </span></p>
+        <h3 class="contentSectionSubtitle"><a href="https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.PRINTCOLLECTION76">Black Panther Party material</a></h3>
+        <p>
+            <i>Extent:</i>
+            0.3 linear feet (1 box, 1 flat file)<span class="break-point">Abstract:
+
+            The Black Panther Party material measures 0.3 linear feet in one box and one flat file, dates from 1968-1970, and is comprised of material created by both Black Panther members and external sources. The collection primarily features speeches, articles, and ephemera authored by three Black Panther leaders: Eldridge Cleaver, Huey Newton, and Bobby Seale. External sources include newspapers from the Berkeley Tribe and Chicago Seed, plus a staff study booklet by United States Congress researchers.
+            </span></p>
+        <h3 class="contentSectionSubtitle"><a href="https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.COLL1588">Charles Harrison Fowler scrapbook</a></h3>
+        <p>
+            <i>Extent:</i>
+            1 volume<span class="break-point">Abstract:
+            
+            Charles Harrison Fowler (1924-1997) was one of the first 400 Black American men to join the 52nd Marine Defense Battalion during World War II. This scrapbook consists of material relating to Fowler's basic training at the Camp LeJeune Marine Base in North Carolina; his service as a Corporal Officer with the all-Black 51st and 52nd Defense Battalions in the Pacific Theater; and his transition back to civilian status after the war, in 1946. </span></p>
+        <h3 class="contentSectionSubtitle"><a href="https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.CODEX2193">George Speechly pharmaceutical recipe book</a></h3>
+        <p>
+            <i>Extent:</i>
+            1 volume<span class="break-point">Abstract:
+            
+            This volume contains about 300 pharmaceutical recipes written and compiled between 1850 and 1878 by English chemist, George Speechly (1833-1928), with 180 of the recipes organized into an index at the beginning of the volume.</span></p>
     </section>
 
     <footer>
@@ -68,8 +102,25 @@
             <ul>
                 <li><a href="https://github.com/ardavis414/INFO552.git"><img src="img/footer/icons/git.svg" alt="github icon"></a></li>
                 <li><a href="https://www.linkedin.com/in/alisha-r-davis/"><img src="img/footer/icons/link.svg" alt="linkedin icon"></a></li>
-                <li><a href="http://ardavislibrarianship.com/musings/"><img src="img/footer/icons/blog icon.svg" alt="professional blog icon"></a></li>
+                <li><a href="http://ardavislibrarianship.com/musings/"><img src="img/footer/icons/blog_icon.svg" alt="professional blog icon">Wordpress</a></li>
             </ul>
+        <section>
+            <ul>
+                <li>
+                    <a href="sitemap.html"><img src="img/header/icons/map.svg" alt="sitemap logo">Sitemap</a>
+                </li>
+                <li>
+                    <a href="https://drexel.edu/cci/">Drexel University, College of Computing and Informatics (CCI)</a>
+                </li>
+                <li>
+                    <a href="#">XHTML validation</a>
+                </li>
+                <li>
+                    <a href="#">CSS validation</a>
+                </li> 
+            </ul>
+            <p>© Alisha Davis</p>
+        </section>
     </footer>
 </body>
 </html>
