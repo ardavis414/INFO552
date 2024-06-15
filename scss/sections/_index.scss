@@ -29,6 +29,35 @@
     }
 }
 
+#index-aboutMe{
+    padding: 16px 0;
+    text-align: left;
+    background-color: var(--whiteDutchLite);
+
+    >div{
+        padding: 0 16px;
+        
+        @include md{
+            padding: 0 56px;
+        }
+
+        @include lg{
+            padding: 0 20vw;
+        }
+
+        @include xxl{
+            padding: 0 400px;
+        }
+
+        p{
+            font-size: rem-calc(18);
+            color: var(--blueDark);
+            line-height: rem-calc(24);
+            padding-bottom: 20px;
+        }
+    }
+}
+
 
 #index-service{
     background-color: var(--whiteDutchLite);

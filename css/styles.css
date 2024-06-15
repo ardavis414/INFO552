@@ -629,6 +629,36 @@ footer #copyright-statement p {
   padding-bottom: 20px;
 }
 
+#index-aboutMe {
+  padding: 16px 0;
+  text-align: left;
+  background-color: var(--whiteDutchLite);
+}
+#index-aboutMe > div {
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  #index-aboutMe > div {
+    padding: 0 56px;
+  }
+}
+@media (min-width: 1024px) {
+  #index-aboutMe > div {
+    padding: 0 20vw;
+  }
+}
+@media (min-width: 1440px) {
+  #index-aboutMe > div {
+    padding: 0 400px;
+  }
+}
+#index-aboutMe > div p {
+  font-size: 1.125rem;
+  color: var(--blueDark);
+  line-height: 1.5rem;
+  padding-bottom: 20px;
+}
+
 #index-service {
   background-color: var(--whiteDutchLite);
 }
