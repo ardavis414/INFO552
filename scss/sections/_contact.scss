@@ -1,11 +1,11 @@
-#contact-form{
+#index-contact{
     padding: 20px 15px 20px;
     background-color: var(--blueDark);
 
     form{
         display: grid;
         gap: 16px;
-        grid-template-rows: 90px 90px 200px auto;
+        grid-template-rows: 50px 60px 200px auto;
 
         @include md{
             padding: 0 10vw;

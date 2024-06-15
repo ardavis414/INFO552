@@ -3,32 +3,58 @@
 ============= */
 footer{
     background-color: var(--blueLight);
-    text-align: center;
-    height: 25vh;
+    // text-align: center;
+    height: 23vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 5px;
 
     @include lg{
-        background-position: center;
+        // background-position: center;
         height: 70vh;
     }
 
-    >div{
-        padding-bottom: 32px;
-    
+    #socialMedia{
+
         ul{
-            padding: 32px 6vw 16px;
-            display: inline-flex;
-            justify-content: space-between;
+            padding: 10px 4vw 12px;
+            display: inline-block;
+            align-items: left;
+            // border-style: solid;
 
             li{
                 a{
                     color: var(--orangeBurnt);
-                    font-size: rem-calc(30);
+                    font-size: rem-calc(8);
                 }
-    
+            }      
+        }
+    }
+
+    #resourcesReq{
+        ul{
+            padding: 10px 12vw 12px;
+            display: inline-block;
+            align-items: right;
+            // border-style: solid;
+
+            li{
+                font-size: rem-calc(12);
             }
         }
     }
+    
+    #copyright-statement{
+        padding: 10px 8px;
+        display: inline-block;
+        align-items: right;
+        // border-style: solid;
+
+        p{
+            font-size: rem-calc(10); 
+        }
+    }
+
 }

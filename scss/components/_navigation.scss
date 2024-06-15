@@ -2,27 +2,33 @@
     Navigation
 ============= */
 
+a{
+    text-decoration: none;
+}
+
 #main-nav{
     background-color: var(--yellowGoldenrod);
-    padding: 5px;
+    padding: 9px;
 }
 
-ul{
-    li{
-        text-align: left;
+    div{
+        ul{
+            li{
+                text-align: left;
 
-        a:link, a:visited{
-            display: inline;
-            padding: 16px 0;
-            color: var(--blueDark);
-            transition: 0.25s;
-        }
-            i{
-                color: var(--white);
-                margin-left: 8px;
+                a:link, a:visited{
+                    // display: block;
+                    // padding: 16px 0;
+                    color: var(--blueViolet);
+                    transition: 0.25s;
+                }
+                    i{
+                        color: var(--white);
+                        margin-left: 8px;
+                    }
+                a:hover, a:active{
+                    color: var(--white);
+                }
             }
-        a:hover, a:active{
-            color: var(--white);
-        }
+        }    
     }
-}

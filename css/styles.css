@@ -18,7 +18,7 @@ html {
   --yellowGoldenrod: #d79922;
   --blueDark: #4056a1;
   --blueLight: #c5cbe3;
-  --blueVioletDark: #37115a;
+  --blueViolet: #6e22b4;
   --redVermillion: #f13c20;
   --orangeTerracotta: #E3735E;
   --orangeDark: #B55C4B;
@@ -364,7 +364,7 @@ body {
 
 .li_b {
   list-style-type: circle;
-  color: var(--white);
+  color: var(--blueLight);
 }
 
 h1, h2, h3, h4, h5 {
@@ -463,26 +463,28 @@ textarea {
 /* =============
     Navigation
 ============= */
-#main-nav {
-  background-color: var(--yellowGoldenrod);
-  padding: 5px;
+a {
+  text-decoration: none;
 }
 
-ul li {
+#main-nav {
+  background-color: var(--yellowGoldenrod);
+  padding: 9px;
+}
+
+div ul li {
   text-align: left;
 }
-ul li a:link, ul li a:visited {
-  display: inline;
-  padding: 16px 0;
-  color: var(--blueDark);
+div ul li a:link, div ul li a:visited {
+  color: var(--blueViolet);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-ul li i {
+div ul li i {
   color: var(--white);
   margin-left: 8px;
 }
-ul li a:hover, ul li a:active {
+div ul li a:hover, div ul li a:active {
   color: var(--white);
 }
 
@@ -532,10 +534,10 @@ header #header-container {
 header #header-container #logo-container {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  padding: 16px 0 16px 16px;
+  padding: 14px 0 10px 14px;
   grid-area: logo;
 }
-header #main-nav {
+header #header-container #main-nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -547,8 +549,7 @@ header #main-nav {
 ============= */
 footer {
   background-color: var(--blueLight);
-  text-align: center;
-  height: 25vh;
+  height: 23vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,28 +559,44 @@ footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding-left: 20px;
+  padding-bottom: 5px;
 }
 @media (min-width: 1024px) {
   footer {
-    background-position: center;
     height: 70vh;
   }
 }
-footer > div {
-  padding-bottom: 32px;
+footer #socialMedia ul {
+  padding: 10px 4vw 12px;
+  display: inline-block;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
-footer > div ul {
-  padding: 32px 6vw 16px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-footer > div ul li a {
+footer #socialMedia ul li a {
   color: var(--orangeBurnt);
-  font-size: 1.875rem;
+  font-size: 0.5rem;
+}
+footer #resourcesReq ul {
+  padding: 10px 12vw 12px;
+  display: inline-block;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+footer #resourcesReq ul li {
+  font-size: 0.75rem;
+}
+footer #copyright-statement {
+  padding: 10px 8px;
+  display: inline-block;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+footer #copyright-statement p {
+  font-size: 0.625rem;
 }
 
 #index-hero {
@@ -616,10 +633,16 @@ footer > div ul li a {
   background-color: var(--whiteDutchLite);
 }
 #index-service > div {
-  padding: 0 16px 16px;
+  padding: 0 16px;
 }
 #index-service > div ul {
-  padding: 0 30px;
+  padding: 10px 30px;
+}
+#index-service > div ul li {
+  list-style-type: square;
+}
+#index-service > div ul li ul li {
+  list-style-type: square;
 }
 
 #projects-hero {
@@ -752,19 +775,19 @@ footer > div ul li a {
   padding: 0 30px;
 }
 
-#contact-form {
+#index-contact {
   padding: 20px 15px 20px;
   background-color: var(--blueDark);
 }
-#contact-form form {
+#index-contact form {
   display: -ms-grid;
   display: grid;
   gap: 16px;
-  -ms-grid-rows: 90px 16px 90px 16px 200px 16px auto;
-  grid-template-rows: 90px 90px 200px auto;
+  -ms-grid-rows: 50px 16px 60px 16px 200px 16px auto;
+  grid-template-rows: 50px 60px 200px auto;
 }
 @media (min-width: 768px) {
-  #contact-form form {
+  #index-contact form {
     padding: 0 10vw;
     -ms-grid-columns: 50% auto;
     grid-template-columns: 50% auto;
@@ -773,7 +796,7 @@ footer > div ul li a {
         grid-template-areas: "name email" "message message" ". send-button";
   }
 }
-#contact-form form div {
+#index-contact form div {
   background-color: var(--blueDark);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -782,14 +805,14 @@ footer > div ul li a {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-#contact-form form div input {
+#index-contact form div input {
   width: 100%;
   padding-bottom: 5px;
   padding-left: 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-#contact-form form div textarea {
+#index-contact form div textarea {
   padding-top: 8px;
   height: 100%;
   width: 100%;
@@ -797,46 +820,46 @@ footer > div ul li a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-#contact-form form div ::-ms-input-placeholder { /* Edge 12-18 */
+#index-contact form div ::-ms-input-placeholder { /* Edge 12-18 */
   background-color: var(--whiteDutchLite);
 }
-#contact-form form div ::-webkit-input-placeholder {
+#index-contact form div ::-webkit-input-placeholder {
   color: var(--yellowGoldenrod);
   opacity: 1;
 }
-#contact-form form div ::-moz-placeholder {
+#index-contact form div ::-moz-placeholder {
   color: var(--yellowGoldenrod);
   opacity: 1;
 }
-#contact-form form div :-ms-input-placeholder {
+#index-contact form div :-ms-input-placeholder {
   color: var(--yellowGoldenrod);
   opacity: 1;
 }
-#contact-form form div ::placeholder {
+#index-contact form div ::placeholder {
   color: var(--yellowGoldenrod);
   opacity: 1;
 }
 @media (min-width: 768px) {
-  #contact-form form #contact-name {
+  #index-contact form #contact-name {
     grid-area: name;
   }
 }
 @media (min-width: 768px) {
-  #contact-form form #contact-email {
+  #index-contact form #contact-email {
     grid-area: email;
   }
 }
-#contact-form form #contact-message {
+#index-contact form #contact-message {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 @media (min-width: 768px) {
-  #contact-form form #contact-message {
+  #index-contact form #contact-message {
     grid-area: message;
   }
 }
-#contact-form form #contact-button {
+#index-contact form #contact-button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -846,25 +869,25 @@ footer > div ul li a {
   background-color: var(--yellowGoldenrod);
 }
 @media (min-width: 768px) {
-  #contact-form form #contact-button {
+  #index-contact form #contact-button {
     grid-area: send-button;
   }
 }
 @media (min-width: 768px) {
-  #contact-form form #contact-name {
+  #index-contact form #contact-name {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  #contact-form form #contact-email {
+  #index-contact form #contact-email {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
-  #contact-form form #contact-message {
+  #index-contact form #contact-message {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
-  #contact-form form #contact-button {
+  #index-contact form #contact-button {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
   }

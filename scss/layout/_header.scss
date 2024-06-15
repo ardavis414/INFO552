@@ -33,11 +33,12 @@ header{
         }
     
         #logo-container{
-            padding: 16px 0 16px 16px;
+            padding: 14px 0 10px 14px;
             grid-area: logo;
         }
-    }
-    #main-nav{
-        grid-area: nav;
+
+        #main-nav{
+            grid-area: nav;
+        }
     }
 }
