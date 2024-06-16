@@ -463,10 +463,6 @@ textarea {
 /* =============
     Navigation
 ============= */
-a {
-  text-decoration: none;
-}
-
 #main-nav {
   background-color: var(--yellowGoldenrod);
   padding: 9px;
@@ -485,6 +481,22 @@ div ul li i {
   margin-left: 8px;
 }
 div ul li a:hover, div ul li a:active {
+  color: var(--white);
+}
+
+h2, h3 {
+  text-align: left;
+}
+h2 a:link, h2 a:visited, h3 a:link, h3 a:visited {
+  color: var(--blueViolet);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+h2 i, h3 i {
+  color: var(--white);
+  margin-left: 8px;
+}
+h2 a:hover, h2 a:active, h3 a:hover, h3 a:active {
   color: var(--white);
 }
 
@@ -549,7 +561,7 @@ header #header-container #main-nav {
 ============= */
 footer {
   background-color: var(--blueLight);
-  height: 23vh;
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,15 +576,20 @@ footer {
 }
 @media (min-width: 1024px) {
   footer {
-    height: 70vh;
+    height: 40vh;
+  }
+}
+@media (min-width: 1440px) {
+  footer {
+    height: 60vh;
   }
 }
 footer #socialMedia ul {
-  padding: 10px 4vw 12px;
+  padding: 10px 6vw 12px;
   display: inline-block;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 footer #socialMedia ul li a {
   color: var(--orangeBurnt);
@@ -581,12 +598,12 @@ footer #socialMedia ul li a {
 footer #resourcesReq ul {
   padding: 10px 12vw 12px;
   display: inline-block;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 footer #resourcesReq ul li {
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 footer #copyright-statement {
   padding: 10px 8px;
@@ -596,7 +613,7 @@ footer #copyright-statement {
           align-items: right;
 }
 footer #copyright-statement p {
-  font-size: 0.625rem;
+  font-size: 1rem;
 }
 
 #index-hero {
@@ -731,16 +748,27 @@ footer #copyright-statement p {
 }
 
 #sitemap-hero {
+  padding: 20px 14px 10px;
   text-align: center;
   background-color: var(--whiteDutchLite);
 }
 
 #sitemap-container {
+  padding-bottom: 20px;
   text-align: left;
   background-color: var(--whiteDutchLite);
 }
 #sitemap-container > div {
-  padding: none;
+  padding: 0 16px;
+}
+#sitemap-container > div ul {
+  padding: 0 30px;
+}
+#sitemap-container > div ul li {
+  list-style-type: square;
+}
+#sitemap-container > div ul li ul li {
+  list-style-type: square;
 }
 
 #pl-hero {
@@ -787,22 +815,34 @@ footer #copyright-statement p {
 
 #cp-List {
   background-color: var(--whiteDutchLite);
+  padding: 0 16px;
 }
 #cp-List ul {
   padding: 0 22px 5px;
 }
 #cp-List ul li {
+  list-style-type: square;
   color: var(--blueDark);
+}
+
+#ICMGLT-pdf {
+  text-align: left;
+  padding: 5px 16px;
+  background-color: var(--whiteDutchLite);
+}
+#ICMGLT-pdf > div {
+  padding: 16px 30px 20px;
 }
 
 #cp-Kislak {
   background-color: var(--whiteDutchLite);
 }
-#cp-Kislak > div {
-  padding: 0 16px;
+#cp-Kislak > p {
+  padding-bottom: 5px;
 }
-#cp-Kislak > div p {
-  padding: 0 30px;
+
+#Kislak-video {
+  padding-left: 20px;
 }
 
 #index-contact {
