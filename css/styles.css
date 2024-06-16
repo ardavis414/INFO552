@@ -561,7 +561,7 @@ header #header-container #main-nav {
 ============= */
 footer {
   background-color: var(--blueLight);
-  height: 20vh;
+  height: 28vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
